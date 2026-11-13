@@ -106,7 +106,7 @@ bash patch.sh lsfg on     # 开启；bash patch.sh lsfg off 关闭
   - `install.sh`、`nv12_patch.py`、`gptk_d3dmetal.sh`、`pbz-launch.sh`（Steam 启动脚本）
   - `gptk/`：苹果 D3DMetal 4.0b3 可再分发组件及其许可
   - `fsr4/`：fsr4-native-macos v3.0（MIT，AMD 部分的许可见 `fsr4/third_party/fsr411/`）
-- `source/`：`ntdll-rosetta-cpu-fidelity.patch`（Hrava）、`ntdll-d3dmetal-fallback.patch`
+- `source/`：`ntdll-rosetta-cpu-fidelity.patch`、`ntdll-d3dmetal-fallback.patch`
 
 Wine 及其修改以 LGPL-2.1-or-later 发布。
 

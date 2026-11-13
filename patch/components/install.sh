@@ -1,5 +1,5 @@
 #!/bin/bash
-# Install the Rosetta/Denuvo ntdll.so (CrossOver 26.3.0.39832 + Hrava's
+# Install the Rosetta/Denuvo ntdll.so (CrossOver 26.3.0.39832 + the
 # ntdll-rosetta-cpu-fidelity patch) into a CrossOver app, and set the CPUID
 # variable for one game in one bottle.
 #
