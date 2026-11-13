@@ -10,7 +10,7 @@
 
 ## 下载
 
-到右侧 **[Releases](../../releases)** 下载最新的 `影之刃零补丁.zip`，解压后打开 App，按提示操作。
+到右侧 **[Releases](../../releases)** 下载最新的 `PBZ-Mac-Patch-v1.0.zip`，解压后打开 App，按提示操作。
 
 第一次打开如果提示“无法验证开发者”：右键点 App →“打开”，或者到“系统设置 → 隐私与安全性”点“仍要打开”。
 
@@ -45,7 +45,7 @@ Run the Steam version of *Phantom Blade Zero* on Apple silicon Macs with **NotPr
 
 > Unofficial patch, not affiliated with S-GAME. You need to own the game on Steam. This is a compatibility fix, not a crack.
 
-**Download:** get the latest `影之刃零补丁.zip` from **[Releases](../../releases)**, unzip and open the app. If macOS says it cannot verify the developer, right-click the app and choose Open.
+**Download:** get the latest `PBZ-Mac-Patch-v1.0.zip` from **[Releases](../../releases)**, unzip and open the app. If macOS says it cannot verify the developer, right-click the app and choose Open.
 
 **Features:** Rosetta CPU-feature fix for the game's Denuvo check, menu video (NV12) fix, D3DMetal 4.0b3, in-game DLSS via MetalFX, optional FSR 4 upscaling, optional Lossless Scaling frame generation (bring your own copy), Chinese / English UI.
 
