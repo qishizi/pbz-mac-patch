@@ -71,7 +71,7 @@ bash patch.sh lsfg on     # 开启；bash patch.sh lsfg off 关闭
 
 | 部分 | 解决的问题 |
 |---|---|
-| `ntdll.so`：Rosetta 修正 | Denuvo 卡在单核 100%、不出窗口。补上 CPUID 第 7 页（CLFLUSHOPT/CLWB/RDPID）、模拟 CLWB/RDPID 指令、模拟硬件执行断点、按 x86 规则上报非规范地址异常。来自 Hrava 公开的源码补丁 |
+| `ntdll.so`：Rosetta 修正 | Denuvo 卡在单核 100%、不出窗口。补上 CPUID 第 7 页（CLFLUSHOPT/CLWB/RDPID）、模拟 CLWB/RDPID 指令、模拟硬件执行断点、按 x86 规则上报非规范地址异常。 |
 | `ntdll.so`：D3DMetal 兜底 | 经 NotProton 的 Steam 桥接启动时，CrossOver 不把游戏交给 D3DMetal，退回 vkd3d，游戏报 SM6 不支持后退出 |
 | `winegstreamer.dll`：NV12 | 教学界面不出、主菜单背景 CG 不动。虚幻 5 的视频播放器只接受 NV12，而 CrossOver 在 Mac 上把它藏起来了。效果同 winevideo 的补丁 0006 |
 | D3DMetal 4.0b3 | CrossOver 26.3 自带 3.0，这个游戏需要 4.0b3 |
