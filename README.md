@@ -69,7 +69,7 @@ Release 里的 App 已经包含这两个组件。
 ## 许可与致谢 / Licenses and credits
 
 - 本项目自己的代码：MIT（见 `LICENSE`）
-- `ntdll.so` 由 CrossOver 26.3 的 Wine 源码编译（LGPL-2.1），改动见 `patch/source/`；Rosetta CPU 修正补丁来自 Hrava
+- `ntdll.so` 由 CrossOver 26.3 的 Wine 源码编译（LGPL-2.1），改动见 `patch/source/`
 - D3DMetal / Game Porting Toolkit：© Apple，按苹果许可**非商业**免费分发，许可原文随组件附带
 - FSR 4：fsr4-native-macos（MIT）及 AMD FidelityFX SDK（MIT）
 - 游戏图片：《影之刃零》Steam 商店页官方宣传图，© S-GAME
