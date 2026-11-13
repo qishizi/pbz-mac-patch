@@ -1,0 +1,134 @@
+影之刃零补丁
+App 里缺少补丁文件
+无法运行补丁脚本：
+安装 NotProton，设置 CrossOver
+在 Steam 里选 NotProton，下载游戏
+启动一次游戏
+安装补丁
+粘贴 Steam 启动选项
+安装 CrossOver 26.3
+新建 bottle，安装 Windows 版 Steam
+在 bottle 的 Steam 里下载游戏
+准备补丁文件失败：
+把所有改动还原成官方原版？
+还原
+会还原 CrossOver 的文件，以及所选 bottle 的设置。请先完全退出 CrossOver。
+会还原 CrossOver 的文件、删除启动脚本。之后记得清空 Steam 里的启动选项。
+影之刃零 · Mac 补丁
+你打算怎么玩？
+用 Mac 版 Steam 玩（推荐）
+已实测，能正常游玩
+支持 DLSS；每次启动编译着色器约 7～10 分钟
+需要安装 NotProton
+在 CrossOver 的 bottle 里装 Windows 版 Steam
+不需要 NotProton
+尚未在 bottle 里实测过游戏
+没有打开 DLSS
+之后可以在左上角随时切换。
+正在检测…
+← 你在这一步
+可选：Lossless 插帧
+已开启
+未开启
+可选：FSR 4 放大
+每 4 秒自动检测一次，做完一步会自动跳到下一步。
+可选
+FSR 4 放大
+开启后，游戏里选 DLSS 时实际运行 FSR 4，而不是 MetalFX。画质通常更好，但会增加 GPU 负担、降低帧数，所以默认关闭。只在 NotProton 下可用。
+安装 Xcode 26 或更高，再在终端运行 xcodebuild -downloadComponent MetalToolchain。
+下面打勾后，点“开启 FSR 4”，再启动游戏。不用改启动选项。
+在游戏里把放大方式选成 DLSS。第一次运行时 FSR 4 要编译着色器，会卡十几秒。
+启动时会同时弹出 FSR 4 面板，可以调锐度。如果游戏停在警告画面没反应，点一下游戏窗口。
+Xcode 的 Metal Toolchain 和 Python 3
+NotProton 运行环境
+关闭 FSR 4
+开启 FSR 4
+完成，下次启动游戏生效
+没有完成，点下面“显示输出”查看原因
+Lossless 插帧
+用 Lossless Scaling 的插帧，把每秒约 60 帧变成约 120 帧。只在 NotProton 下可用。
+在 Steam 购买 Lossless Scaling（付费软件，补丁不能附带它的文件），并让它的 Lossless.dll 出现在 Steam 库里，或者放到 ~/lsfg/lsfg-vk.dll。
+安装 LsfgInjector，打开一次，让它准备好 ~/lsfg 里的文件。
+下面两项都打勾后，点“开启插帧”，再启动游戏。
+游戏里的帧生成要关掉，只留一个插帧。
+LsfgInjector 的文件（~/lsfg）
+关闭插帧
+开启插帧
+设置文件在 ~/.config/lsfg-metal/conf.toml，游戏运行中也可以改：multiplier 是倍数，flow_scale 是光流精度。override_present_mode 必须保持 true，否则游戏会卡死。
+第 %d 步
+这一步已经完成
+从 github.com/NotProtonNot/NotProton 下载安装 NotProton（或用 brew 安装）。
+打开 NotProton，在 CrossOver 一栏找到 CrossOver 26.3（构建版本 26.3.0.39832），点“设置”，等左边的圆圈变成绿点。
+建议同时打开“阻止 Steam 客户端更新”。
+完全退出 Steam，再重新打开。
+打开 NotProton 网页
+在 Steam 库里右键影之刃零 → 属性 → 兼容性。
+勾选“强制使用特定 Steam Play 兼容性工具”，选 NotProton 26.3，图形选 D3DMetal。
+回到游戏页面，点“安装”，等它下载完。
+下拉菜单里没有 NotProton：回到第 1 步，确认已经设置好并重启过 Steam。
+在 Steam 里点“开始”，启动一次影之刃零。
+这次可能卡住、闪退或者没反应，都没关系，目的是让 NotProton 建好游戏的运行环境。
+等半分钟左右，在 Steam 里点“停止”。
+确认游戏已经退出。
+点“安装补丁”，等下面出现“完成”。苹果的 D3DMetal 4.0b3 已经包含在补丁里，不用另外下载。
+Denuvo 修正
+视频解码（NV12）
+Denuvo 设置（注册表）
+DLSS 文件
+启动脚本
+点下面的“复制”。
+Steam 里右键影之刃零 → 属性 → 通用 → 启动选项，粘贴进去，替换原有内容。
+关掉属性窗口，这一步会自动打勾。
+已复制
+复制
+现在的启动选项里没有补丁的启动脚本，请整行替换。
+在 Steam 里启动影之刃零。
+弹出“运行环境检查”（提示缺 VC++）就点“继续游戏”。
+每次启动都要编译着色器，大约 7～10 分钟。
+从 codeweavers.com 下载安装 CrossOver 26.3（构建版本必须是 26.3.0.39832）。
+装好后打开一次 CrossOver，再完全退出。
+找到的 CrossOver 版本是 %@，补丁只支持 26.3.0.39832。
+打开 CrossOver 网页
+打开 CrossOver，点“安装”，搜索 Steam，按提示新建一个 bottle 并安装 Windows 版 Steam。
+装好后在这个 bottle 里启动 Steam，登录账号。
+如果有好几个 bottle，在下面选你装了 Steam 的那个。
+在 bottle 里的 Steam 搜索并安装影之刃零（装在默认的 Steam 库里）。
+等它下载完。
+完全退出 CrossOver（包括里面的 Steam 和游戏）。
+点“安装补丁”，等下面出现“完成”。苹果的 D3DMetal 4.0b3 已经包含在补丁里。
+CrossOver 还在运行，请先完全退出（菜单栏 CrossOver → 退出）。
+关闭全局 DLSS→MetalFX（否则 Steam 黑屏）
+bottle 图形后端设为 D3DMetal
+Denuvo 设置和 VC++ 运行库（注册表）
+打开 CrossOver，在 bottle「%@」里启动 Steam，运行影之刃零。不需要设置启动选项。
+bottle：
+还没有 bottle
+（有游戏）
+（有 Steam）
+（没有 Steam）
+CrossOver：
+没找到
+选择…
+选择 CrossOver 26.3
+高级：换用别的 GPTK
+使用：
+使用补丁自带的 D3DMetal 4.0b3（苹果 Game Porting Toolkit 4.0 beta 3）
+用自带的
+仍然安装（官方签名的另一版本）
+你的 CrossOver 是官方签名的同版本另一次编译，可以放心点“仍然安装”，原文件会先备份。
+完成
+全部完成
+想用 DLSS：在游戏设置里把放大方式选成 DLSS。
+NotProton 或 CrossOver 更新后，补丁可能被覆盖，这里会自动退回到相应的步骤，照着重新做一遍即可。
+（还没有运行）
+运行中…
+隐藏输出
+显示输出
+更多
+打开说明
+苹果 GPTK 许可
+全部还原…
+选择 Game Porting Toolkit 4.0 beta 3 的 .dmg、GPTKPatcher 文件夹或 CrossOver
+语言
+跟随系统
+支持作者（捐赠）

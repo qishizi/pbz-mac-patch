@@ -1,0 +1,7 @@
+.DS_Store
+app/*.app
+app/*.zip
+app/AppIcon.iconset/
+app/icon-1024.png
+patch/components/gptk/
+patch/components/fsr4/

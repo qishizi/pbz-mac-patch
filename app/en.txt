@@ -1,0 +1,134 @@
+PBZ Mac Patch
+The patch files are missing from the app
+Could not run the patch script: 
+Install NotProton and set up CrossOver
+Pick NotProton in Steam and download the game
+Start the game once
+Install the patch
+Paste the Steam launch options
+Install CrossOver 26.3
+Create a bottle and install Windows Steam
+Download the game in the bottle's Steam
+Could not prepare the patch files: 
+Restore everything to the official files?
+Restore
+This restores CrossOver's files and the selected bottle's settings. Quit CrossOver completely first.
+This restores CrossOver's files and deletes the launch script. Remember to clear the launch options in Steam afterwards.
+Phantom Blade Zero · Mac Patch
+How do you want to play?
+Play with Mac Steam (recommended)
+Tested, plays normally
+DLSS works; shaders compile for about 7–10 minutes at every launch
+Needs NotProton
+Install Windows Steam in a CrossOver bottle
+No NotProton needed
+The game has not been tested in a bottle yet
+DLSS is not turned on
+You can switch at any time in the top-left corner.
+Checking…
+← You are here
+Optional: Lossless frame generation
+On
+Off
+Optional: FSR 4 upscaling
+Checks every 4 seconds and moves to the next step when one is done.
+Optional
+FSR 4 upscaling
+When on, choosing DLSS in the game runs FSR 4 instead of MetalFX. The image is usually better, but the GPU works harder and the frame rate drops, so it is off by default. NotProton only.
+Install Xcode 26 or later, then run xcodebuild -downloadComponent MetalToolchain in Terminal.
+When the items below are ticked, click “Turn on FSR 4”, then start the game. The launch options stay the same.
+In the game, set the upscaler to DLSS. On the first run FSR 4 compiles shaders and the game freezes for ten seconds or so.
+The FSR 4 panel opens with the game; you can adjust sharpness there. If the game stays on the warning screen, click the game window.
+Xcode Metal Toolchain and Python 3
+NotProton runner
+Turn off FSR 4
+Turn on FSR 4
+Done. It takes effect the next time the game starts
+Not finished. Click “Show output” below to see why
+Lossless frame generation
+Uses Lossless Scaling's frame generation to turn about 60 fps into about 120 fps. NotProton only.
+Buy Lossless Scaling on Steam (paid software; the patch cannot include its files) and have its Lossless.dll in your Steam library, or put it at ~/lsfg/lsfg-vk.dll.
+Install LsfgInjector and open it once so it prepares the files in ~/lsfg.
+When both items below are ticked, click “Turn on frame generation”, then start the game.
+Turn off frame generation in the game; keep only one.
+LsfgInjector files (~/lsfg)
+Turn off frame generation
+Turn on frame generation
+The settings file is ~/.config/lsfg-metal/conf.toml and can be edited while the game runs: multiplier is the factor, flow_scale is the optical-flow precision. override_present_mode must stay true or the game freezes.
+Step %d
+This step is done
+Download and install NotProton from github.com/NotProtonNot/NotProton (or install it with brew).
+Open NotProton, find CrossOver 26.3 (build 26.3.0.39832) in the CrossOver section, click “Set up” and wait for the circle on the left to turn green.
+Turning on “Block Steam client updates” is recommended.
+Quit Steam completely and open it again.
+Open the NotProton page
+In your Steam library, right-click Phantom Blade Zero → Properties → Compatibility.
+Tick “Force the use of a specific Steam Play compatibility tool”, choose NotProton 26.3, and set graphics to D3DMetal.
+Go back to the game page, click “Install” and wait for the download.
+NotProton is not in the list: go back to step 1 and check it is set up and Steam was restarted.
+Click “Play” in Steam to start Phantom Blade Zero once.
+It may hang, crash or do nothing this time. That is fine: the point is to let NotProton create the game's environment.
+Wait about half a minute, then click “Stop” in Steam.
+Make sure the game has quit.
+Click “Install the patch” and wait for “Done” below. Apple's D3DMetal 4.0b3 is included in the patch; no separate download is needed.
+Denuvo fix
+Video decoding (NV12)
+Denuvo setting (registry)
+DLSS files
+Launch script
+Click “Copy” below.
+In Steam, right-click Phantom Blade Zero → Properties → General → Launch Options, and paste, replacing what is there.
+Close the Properties window; this step ticks itself.
+Copied
+Copy
+The current launch options do not contain the patch's launch script. Replace the whole line.
+Start Phantom Blade Zero in Steam.
+If “Runtime environment check” appears (missing VC++), click “Continue”.
+Shaders compile at every launch, for about 7–10 minutes.
+Download and install CrossOver 26.3 from codeweavers.com (the build must be 26.3.0.39832).
+Open CrossOver once after installing, then quit it completely.
+Found CrossOver version %@; the patch only supports 26.3.0.39832.
+Open the CrossOver page
+Open CrossOver, click “Install”, search for Steam, and follow the prompts to create a bottle and install Windows Steam.
+Then start Steam in that bottle and sign in.
+If you have several bottles, choose the one with Steam below.
+In the bottle's Steam, search for and install Phantom Blade Zero (in the default Steam library).
+Wait for the download.
+Quit CrossOver completely (including Steam and the game inside it).
+Click “Install the patch” and wait for “Done” below. Apple's D3DMetal 4.0b3 is included in the patch.
+CrossOver is still running. Quit it completely first (menu bar CrossOver → Quit).
+Global DLSS→MetalFX off (otherwise Steam's window is black)
+Bottle graphics backend set to D3DMetal
+Denuvo setting and VC++ runtime (registry)
+Open CrossOver, start Steam in the bottle “%@” and run Phantom Blade Zero. No launch options are needed.
+Bottle: 
+No bottles yet
+ (has the game)
+ (has Steam)
+ (no Steam)
+CrossOver: 
+Not found
+Choose…
+Choose CrossOver 26.3
+Advanced: use a different GPTK
+Using: 
+Using the D3DMetal 4.0b3 included in the patch (Apple Game Porting Toolkit 4.0 beta 3)
+Use the included one
+Install anyway (another officially signed build)
+Your CrossOver is another officially signed build of the same version. “Install anyway” is safe; the original files are backed up first.
+Done
+All done
+To use DLSS: set the upscaler to DLSS in the game's settings.
+A NotProton or CrossOver update may overwrite the patch. This window then goes back to the matching step; just follow it again.
+(nothing has run yet)
+Running…
+Hide output
+Show output
+More
+Open the guide
+Apple GPTK license
+Restore everything…
+Choose the Game Porting Toolkit 4.0 beta 3 .dmg, the GPTKPatcher folder, or CrossOver
+Language
+System
+Support the author (donate)
